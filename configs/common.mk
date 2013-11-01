@@ -36,6 +36,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3
 
+# Disable excessive dalvik debug messages
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.debug.alloc=0
+
 # Installer
 PRODUCT_COPY_FILES += \
     vendor/iokp/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
@@ -68,7 +72,12 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh \
     sftp \
-    scp
+    scp \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
+    ntfsfix \
+    ntfs-3g
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -91,3 +100,4 @@ PRODUCT_COPY_FILES += \
 # World APNs
 PRODUCT_COPY_FILES += \
     vendor/iokp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
