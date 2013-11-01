@@ -23,6 +23,7 @@ add_lunch_combo iokp_jfltespr-userdebug
 add_lunch_combo iokp_jfltetmo-userdebug
 add_lunch_combo iokp_jflteusc-userdebug
 add_lunch_combo iokp_jfltevzw-userdebug
+add_lunch_combo iokp_jfltecan-userdebug
 add_lunch_combo iokp_l900-userdebug
 add_lunch_combo iokp_m7att-userdebug
 add_lunch_combo iokp_m7spr-userdebug
