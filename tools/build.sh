@@ -102,6 +102,11 @@ if [[ ${ULENGTH} -gt 9 ]]; then
         fi;
 fi;
 
+# Remove system folder (this will create a new build.prop with updated build time and date)
+rm -f out/target/product/$device/system/build.prop
+rm -f out/target/product/$device/system/app/*.odex
+rm -f out/target/product/$device/system/framework/*.odex
+
 # Starting Timer
 START=$(date +%s)
 THREADS=`cat /proc/cpuinfo | grep processor | wc -l`
