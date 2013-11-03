@@ -23,7 +23,6 @@ PRODUCT_PACKAGES += \
     LockClock \
     Focal \
     DashClock \
-    VoicePlus \
     CMFileManager
 
 PRODUCT_PROPERTY_OVERRIDES += \
