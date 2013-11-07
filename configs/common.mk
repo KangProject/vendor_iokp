@@ -15,9 +15,7 @@ PRODUCT_PACKAGES += \
     ROMControl \
     Stk \
     su \
-    SwagPapers \
     Torch \
-    UnicornPorn \
     PerformanceControl \
     InfamousTools \
     LockClock \
