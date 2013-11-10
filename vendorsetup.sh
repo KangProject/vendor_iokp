@@ -31,6 +31,8 @@ add_lunch_combo iokp_m7tmo-userdebug
 add_lunch_combo iokp_m7ul-userdebug
 add_lunch_combo iokp_maserati-userdebug
 add_lunch_combo iokp_mint-userdebug
+add_lunch_combo iokp_n8013-userdebug
+add_lunch_combo iokp_n8000-userdebug
 add_lunch_combo iokp_odin-userdebug
 add_lunch_combo iokp_p930-userdebug
 add_lunch_combo iokp_pollux-userdebug
