@@ -122,4 +122,4 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(IOKP_VERSION) \
-    ro.aicp.version=$(VERSION) 
+    ro.iokp.version=$(VERSION) 
