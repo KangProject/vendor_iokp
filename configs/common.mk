@@ -15,7 +15,6 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     CellBroadcastReceiver \
     LatinImeDictionaryPack \
-    mGerrit \
     Microbes \
     ROMControl \
     Stk \
@@ -26,7 +25,6 @@ PRODUCT_PACKAGES += \
     LockClock \
     Focal \
     DashClock \
-    com.paranoid.halo \
     CMFileManager
 
 PRODUCT_PROPERTY_OVERRIDES += \

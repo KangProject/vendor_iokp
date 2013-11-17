@@ -2,6 +2,7 @@ add_lunch_combo iokp_mako-userdebug
 add_lunch_combo iokp_maguro-userdebug
 add_lunch_combo iokp_toro-userdebug
 add_lunch_combo iokp_toroplus-userdebug
+add_lunch_combo iokp_deb-userdebug
 add_lunch_combo iokp_flo-userdebug
 add_lunch_combo iokp_grouper-userdebug
 add_lunch_combo iokp_tilapia-userdebug
