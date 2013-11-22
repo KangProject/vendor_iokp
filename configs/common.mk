@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     InfamousTools \
     LockClock \
     Focal \
+    VoicePlus \
     DashClock \
     CMFileManager
 
@@ -42,6 +43,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Disable excessive dalvik debug messages
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/iokp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/iokp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/iokp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Installer
 PRODUCT_COPY_FILES += \
@@ -107,7 +114,7 @@ PRODUCT_COPY_FILES += \
 # IOKP RELEASE VERSION
 IOKP_VERSION_MAJOR = v2
 IOKP_VERSION_MINOR = 0
-# IOKP_VERSION_MAINTENANCE = RC1
+
 
 
 VERSION := $(IOKP_VERSION_MAJOR).$(IOKP_VERSION_MINOR)
