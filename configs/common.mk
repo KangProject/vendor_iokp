@@ -6,27 +6,19 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/common
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/dictionaries
 
-# ParanoidAndroid Overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
-
-
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CellBroadcastReceiver \
+    libemoji \
     LatinImeDictionaryPack \
+    mGerrit \
     Microbes \
     ROMControl \
     Stk \
     su \
+    SwagPapers \
     Torch \
-    PerformanceControl \
-    InfamousTools \
-    LockClock \
-    Focal \
-    VoicePlus \
-    DashClock \
-    CMFileManager
+    UnicornPorn
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -39,16 +31,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     windowsmgr.max_events_per_sec=240 \
     ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3
-
-# Disable excessive dalvik debug messages
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.debug.alloc=0
-
-# Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/iokp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/iokp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Installer
 PRODUCT_COPY_FILES += \
@@ -112,7 +94,7 @@ PRODUCT_COPY_FILES += \
     vendor/iokp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # IOKP RELEASE VERSION
-IOKP_VERSION_MAJOR = v2
+IOKP_VERSION_MAJOR = v3
 IOKP_VERSION_MINOR = 0
 
 

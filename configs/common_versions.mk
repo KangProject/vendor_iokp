@@ -2,7 +2,7 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
 DATE = $(shell vendor/iokp/tools/getdate)
-IOKP_BRANCH=jb-mr2
+IOKP_BRANCH=kitkat
 
 ifneq ($(IOKP_BUILD),)
     # IOKP_BUILD=<goo version int>/<build string>
@@ -18,7 +18,7 @@ else
             ro.iokp.version=$(TARGET_PRODUCT)_nightly_$(DATE)
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.iokp.version=$(TARGET_PRODUCT)_official_$(DATE)
+            ro.iokp.version=$(TARGET_PRODUCT)_unofficial_$(DATE)
     endif
 endif
 
