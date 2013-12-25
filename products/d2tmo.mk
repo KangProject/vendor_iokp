@@ -7,7 +7,11 @@ $(call inherit-product, vendor/iokp/configs/gsm.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/iokp/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/d2-common
+#PRODUCT_PACKAGE_OVERLAYS += \
+#    vendor/iokp/overlay/samsung/d2-common \
+#    vendor/iokp/overlay/samsung/msm8960 \
+#    vendor/iokp/overlay/samsung/qcom
+
 
 # Setup device specific product configuration.
 PRODUCT_NAME := iokp_d2tmo

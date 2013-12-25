@@ -31,12 +31,10 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
-    windowsmgr.max_events_per_sec=240 \
     ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3
 
@@ -106,19 +104,19 @@ PRODUCT_COPY_FILES += \
     vendor/iokp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # IOKP RELEASE VERSION
-IOKP_VERSION_MAJOR = v3
-IOKP_VERSION_MINOR = 0
+# IOKP_VERSION_MAJOR = v3
+# IOKP_VERSION_MINOR = 0
 
 
 
-VERSION := $(IOKP_VERSION_MAJOR).$(IOKP_VERSION_MINOR)
+# VERSION := $(IOKP_VERSION_MAJOR).$(IOKP_VERSION_MINOR)
 
-ifeq ($(DEVELOPER_VERSION),true)
-    IOKP_VERSION := dev_$(BOARD)-$(VERSION)-$(shell date -u +%Y%m%d)
-else
-    IOKP_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date -u +%Y%m%d)
-endif
+# ifeq ($(DEVELOPER_VERSION),true)
+#     IOKP_VERSION := dev_$(BOARD)-$(VERSION)-$(shell date -u +%Y%m%d)
+# else
+#     IOKP_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date -u +%Y%m%d)
+# endif
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=$(IOKP_VERSION) \
-    ro.iokp.version=$(VERSION) 
+# PRODUCT_PROPERTY_OVERRIDES += \
+#     ro.modversion=$(IOKP_VERSION) \
+#     ro.iokp.version=$(VERSION) 
