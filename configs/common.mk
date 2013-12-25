@@ -20,6 +20,14 @@ PRODUCT_PACKAGES += \
     Torch \
     UnicornPorn
 
+ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=android-google
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
+endif
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
@@ -31,6 +39,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     windowsmgr.max_events_per_sec=240 \
     ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
 
 # Installer
 PRODUCT_COPY_FILES += \
@@ -46,6 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/iokp/prebuilt/common/etc/init.local.rc:root/init.aokp.rc \
     vendor/iokp/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
     vendor/iokp/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/iokp/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel \
     vendor/iokp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/iokp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
