@@ -104,19 +104,19 @@ PRODUCT_COPY_FILES += \
     vendor/iokp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # IOKP RELEASE VERSION
-# IOKP_VERSION_MAJOR = v3
+IOKP_VERSION_MAJOR = v1
 # IOKP_VERSION_MINOR = 0
 
 
 
-# VERSION := $(IOKP_VERSION_MAJOR).$(IOKP_VERSION_MINOR)
+VERSION := $(IOKP_VERSION_MAJOR).$(IOKP_VERSION_MINOR)
 
-# ifeq ($(DEVELOPER_VERSION),true)
-#     IOKP_VERSION := dev_$(BOARD)-$(VERSION)-$(shell date -u +%Y%m%d)
-# else
-#     IOKP_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date -u +%Y%m%d)
-# endif
+ifeq ($(DEVELOPER_VERSION),true)
+    IOKP_VERSION := dev_$(BOARD)-$(VERSION)-$(shell date -u +%Y%m%d)
+else
+    IOKP_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date -u +%Y%m%d)
+endif
 
-# PRODUCT_PROPERTY_OVERRIDES += \
-#     ro.modversion=$(IOKP_VERSION) \
-#     ro.iokp.version=$(VERSION) 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.modversion=$(IOKP_VERSION) \
+    ro.iokp.version=$(VERSION) 
