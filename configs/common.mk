@@ -6,19 +6,28 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/common
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/dictionaries
 
+# ParanoidAndroid Overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
+
+
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CellBroadcastReceiver \
     libemoji \
     LatinImeDictionaryPack \
-    mGerrit \
     Microbes \
     ROMControl \
     Stk \
     su \
-    SwagPapers \
     Torch \
-    UnicornPorn
+    PerformanceControl \
+    InfamousTools \
+    LockClock \
+    Focal \
+    VoicePlus \
+    DashClock \
+    CMFileManager
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -31,15 +40,25 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
+    ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
+    windowsmgr.max_events_per_sec=240 \
     ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3
 
+# Disable excessive dalvik debug messages
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
+    dalvik.vm.debug.alloc=0
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/iokp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/iokp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/iokp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Installer
 PRODUCT_COPY_FILES += \
@@ -112,9 +131,9 @@ IOKP_VERSION_MAJOR = v1
 VERSION := $(IOKP_VERSION_MAJOR).$(IOKP_VERSION_MINOR)
 
 ifeq ($(DEVELOPER_VERSION),true)
-    IOKP_VERSION := dev_$(BOARD)-$(VERSION)-$(shell date -u +%Y%m%d)
+    IOKP_VERSION := dev_$(BOARD)-$(VERSION)
 else
-    IOKP_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date -u +%Y%m%d)
+    IOKP_VERSION := $(TARGET_PRODUCT)-$(VERSION)
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \

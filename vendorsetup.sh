@@ -3,6 +3,9 @@ add_lunch_combo iokp_mako-userdebug
 add_lunch_combo iokp_flo-userdebug
 add_lunch_combo iokp_maguro-userdebug
 add_lunch_combo iokp_toro-userdebug
+add_lunch_combo iokp_deb-userdebug
+add_lunch_combo iokp_flo-userdebug
+add_lunch_combo iokp_tilapia-userdebug
 add_lunch_combo iokp_manta-userdebug
 add_lunch_combo iokp_d2att-userdebug
 add_lunch_combo iokp_d2tmo-userdebug
@@ -15,6 +18,7 @@ add_lunch_combo iokp_jfltespr-userdebug
 add_lunch_combo iokp_jfltetmo-userdebug
 add_lunch_combo iokp_jflteusc-userdebug
 add_lunch_combo iokp_jfltevzw-userdebug
+add_lunch_combo iokp_jfltecan-userdebug
 add_lunch_combo iokp_l900-userdebug
 add_lunch_combo iokp_m7att-userdebug
 add_lunch_combo iokp_m7spr-userdebug
