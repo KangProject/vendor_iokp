@@ -8,7 +8,7 @@ $(call inherit-product, vendor/iokp/configs/cdma.mk)
 $(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Inherit common jf overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/iokp/overlay/jf-common
+#DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/jf-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := iokp_jflteusc

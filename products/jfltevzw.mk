@@ -11,7 +11,7 @@ $(call inherit-product, vendor/iokp/configs/vzw.mk)
 $(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Inherit common jf overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/iokp/overlay/jf-common
+#DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/jf-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := iokp_jfltevzw
@@ -21,6 +21,8 @@ PRODUCT_MODEL := SCH-I545
 PRODUCT_MANUFACTURER := Samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltevzw TARGET_DEVICE=jfltevzw BUILD_FINGERPRINT="Verizon/jfltevzw/jfltevzw:4.2.2/JDQ39/I545VRUAME7:user/release-keys" PRIVATE_BUILD_DESC="jfltevzw-user 4.2.2 JDQ39 I545VRUAME7 release-keys"
+
+PRODUCT_GMS_CLIENTID_BASE := android-verizon
 
 # boot animation
 PRODUCT_COPY_FILES += \
