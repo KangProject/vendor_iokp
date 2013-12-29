@@ -12,6 +12,8 @@ add_lunch_combo iokp_d2tmo-userdebug
 add_lunch_combo iokp_d2usc-userdebug
 add_lunch_combo iokp_d2vzw-userdebug
 add_lunch_combo iokp_i605-userdebug
+add_lunch_combo iokp_hltetmo-userdebug
+add_lunch_combo iokp_hltexx-userdebug
 add_lunch_combo iokp_jfltecri-userdebug
 add_lunch_combo iokp_jfltecsp-userdebug
 add_lunch_combo iokp_jfltespr-userdebug
