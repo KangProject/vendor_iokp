@@ -21,6 +21,8 @@ PRODUCT_PACKAGES += \
     Stk \
     su \
     Torch \
+    Apollo \
+    PerformanceControl \
     InfamousTools \
     LockClock \
     Focal \
