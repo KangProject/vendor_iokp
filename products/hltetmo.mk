@@ -12,12 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product-if-exists, vendor/samsung/hltetmo/hltetmo-vendor.mk)
+# Inherit device configuration
+$(call inherit-product, device/samsung/hltetmo/full_hltetmo.mk)
 
-TARGET_NFC_TECH := nxp
+## Specify phone tech before including full_phone
+$(call inherit-product, vendor/iokp/configs/common_gsm.mk)
 
-# Device Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/hltetmo/overlay
+# Enhanced NFC
+#$(call inherit-product, vendor/iokp/configs/nfc_enhanced.mk)
 
-# Inherit from hlte-common
-$(call inherit-product, device/samsung/hlte-common/hlte-common.mk)
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/iokp/configs/common.mk)
+
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=hltetmo TARGET_DEVICE=hltetmo BUILD_FINGERPRINT="samsung/hltetmo/hltetmo:4.3/JSS15J/N900TUVUBMI7:user/release-keys" PRIVATE_BUILD_DESC="hltetmo-user 4.3 JSS15J N900TUVUBMI7 release-keys"
+
+## Device identifier. This must come after all inclusions
+PRODUCT_NAME := iokp_hltetmo
+PRODUCT_DEVICE := hltetmo
+PRODUCT_MODEL := SM-N900T
