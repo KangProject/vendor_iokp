@@ -1,4 +1,5 @@
 add_lunch_combo iokp_hammerhead-userdebug
+add_lunch_combo iokp_hltetmo-userdebug
 add_lunch_combo iokp_mako-userdebug
 add_lunch_combo iokp_flo-userdebug
 add_lunch_combo iokp_maguro-userdebug
