@@ -124,7 +124,7 @@ PRODUCT_COPY_FILES += \
     vendor/iokp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # IOKP RELEASE VERSION
-IOKP_VERSION_MAJOR = v1
+IOKP_VERSION_MAJOR = v2
 # IOKP_VERSION_MINOR = 0
 
 
