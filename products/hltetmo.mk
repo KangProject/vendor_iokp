@@ -16,10 +16,7 @@
 $(call inherit-product, device/samsung/hltetmo/full_hltetmo.mk)
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/iokp/configs/common_gsm.mk)
-
-# Enhanced NFC
-#$(call inherit-product, vendor/iokp/configs/nfc_enhanced.mk)
+$(call inherit-product, vendor/iokp/configs/gsm.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/iokp/configs/common.mk)
