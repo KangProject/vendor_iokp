@@ -14,6 +14,7 @@ add_lunch_combo iokp_d2vzw-userdebug
 add_lunch_combo iokp_d800-userdebug
 add_lunch_combo iokp_d801-userdebug
 add_lunch_combo iokp_d802-userdebug
+add_lunch_combo iokp_hlte-userdebug
 add_lunch_combo iokp_hltetmo-userdebug
 add_lunch_combo iokp_huashan-userdebug
 add_lunch_combo iokp_honami-userdebug
