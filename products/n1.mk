@@ -2,20 +2,20 @@
 $(call inherit-product, device/oppo/n1/full_n1.mk)
 
 # Inherit common device configuration for n1
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/iokp/configs/gsm.mk)
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+    vendor/iokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/n1
+PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/n1
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n1
-PRODUCT_NAME := aokp_n1
+PRODUCT_NAME := iokp_n1
 PRODUCT_BRAND := Oppo
 PRODUCT_MODEL := N1
 PRODUCT_MANUFACTURER := Oppo

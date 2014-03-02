@@ -1,4 +1,4 @@
-# Inherit IOKP common_tablet bits
+# Inherit iokp common_tablet bits
 $(call inherit-product, vendor/iokp/configs/common_tablet.mk)
 
 # Inherit device configuration

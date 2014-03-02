@@ -1,5 +1,5 @@
-# Inherit AOKP device configuration for odin
-$(call inherit-product-if-exists, device/sony/odin/iokp.mk)
+# Inherit iokp device configuration for odin
+$(call inherit-product-if-exists, device/sony/odin/aokp.mk)
 
 # hayabusa overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/odin

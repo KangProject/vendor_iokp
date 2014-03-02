@@ -589,9 +589,9 @@
   <apn carrier="Globul" mcc="284" mnc="05" apn="globul" user="globul" type="default,supl,mms" />
   <apn carrier="Globul MMS" mcc="284" mnc="05" apn="mms.globul.bg" user="mms" mmsc="http://mmsc1.mms.globul.bg:8002" mmsproxy="192.168.087.011" mmsport="8004" type="mms" />
   <apn carrier="Turkcell" mcc="286" mnc="01" apn="internet" type="default,supl" />
-  <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" user="mms" password="mms" mmsc="http://mms.turkcell.com.tr/servlets/mms" mmsproxy="212.252.169.217" mmsport="9201" type="mms" />
-  <apn carrier="Vodafone TR" mcc="286" mnc="02" apn="internet" user="vodafone" password="vodafone" type="default,supl" />
-  <apn carrier="Vodafone TR MMS" mcc="286" mnc="02" apn="mms" user="vodafone" password="vodafone" mmsc="http://217.31.233.18:6001/MM1Servlet" mmsproxy="217.31.233.18" mmsport="9201" type="mms" />
+  <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" user="mms" password="mms" proxy="212.252.234.168" port="8080" mmsc="http://mms.turkcell.com.tr/servlets/mms" mmsproxy="212.252.169.217" mmsport="8080" type="mms" />
+  <apn carrier="Vodafone Internet" mcc="286" mnc="02" apn="internet" user="vodafone" password="vodafone" type="default,supl" />
+  <apn carrier="Vodafone MMS" mcc="286" mnc="02" apn="MMS" user="vodafone" password="vodafone" mmsc="http://217.31.233.18:6001/MM1Servlet" mmsproxy="217.31.233.18" mmsport="9401" type="mms" />
   <apn carrier="AVEA" mcc="286" mnc="03" apn="internet" user="wap" password="wap" type="default,supl" />
   <apn carrier="AVEA MMS" mcc="286" mnc="03" apn="mms" user="mms" password="mms" mmsc="http://mms.avea.com.tr/servlets/mms" mmsproxy="213.161.151.201" mmsport="8080" type="mms" />
   <apn carrier="Tele" mcc="290" mnc="01" apn="internet" type="default,supl" />
@@ -1214,7 +1214,7 @@
   <apn carrier="Maxis 3G MMS" mcc="502" mnc="12" apn="unet" user="maxis" password="wap" server="202.75.133.49" mmsc="http://172.16.74.100:10021/mmsc" mmsproxy="202.75.133.49" mmsport="80" type="mms" />
   <apn carrier="Celcom" mcc="502" mnc="13" apn="celcom3g" type="default,supl" />
   <apn carrier="Celcom MMS" mcc="502" mnc="13" apn="celcom3g" user="mms" password="mms" mmsc="http://mms.celcom.net.my" mmsproxy="10.128.1.242" mmsport="8080" type="mms" />
-  <apn carrier="Digi MMS" mcc="502" mnc="16" apn="digimms" user="mms" password="mms" mmsc="http://mms.digi.com.my/servlets/mms" mmsproxy="203.92.128.160" mmsport="9201" type="mms" />
+  <apn carrier="Digi MMS" mcc="502" mnc="16" apn="digimms" user="mms" password="mms" mmsc="http://mms.digi.com.my/servlets/mms" mmsproxy="203.92.128.160" mmsport="80" type="mms" />
   <apn carrier="Digi" mcc="502" mnc="16" apn="diginet" user="digi" password="digi" type="default,supl" />
   <apn carrier="Celcom 3G Internet" mcc="502" mnc="19" apn="celcom3g" type="default,supl" />
   <apn carrier="Celcom 3G MMS" mcc="502" mnc="19" apn="celcom3g" mmsc="http://mms.celcom.net.my" mmsproxy="10.128.1.242" mmsport="8080" type="mms" />

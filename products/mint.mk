@@ -1,5 +1,5 @@
-# Inherit AOKP device configuration for mint
-$(call inherit-product-if-exists, device/sony/mint/iokp.mk)
+# Inherit iokp device configuration for mint
+$(call inherit-product-if-exists, device/sony/mint/aokp.mk)
 
 # mint overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/mint

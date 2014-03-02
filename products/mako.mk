@@ -1,14 +1,14 @@
 # Inherit AOSP device configuration for mako
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
-# Inherit IOKP common bits
+# Inherit iokp common bits
 $(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/iokp/configs/gsm.mk)
 
 # Mako Overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/mako
+#PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/mako
 
 # Setup device specific product configuration
 PRODUCT_NAME := iokp_mako

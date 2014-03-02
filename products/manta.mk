@@ -1,7 +1,7 @@
 # Inherit AOSP device configuration for mako
 $(call inherit-product, device/samsung/manta/full_manta.mk)
 
-# Inherit IOKP common bits
+# Inherit iokp common bits
 $(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Manta Overlay

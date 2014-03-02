@@ -1,7 +1,7 @@
 # Inherit AOSP device configuration for toroplus.
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
-# Inherit IOKP common bits
+# Inherit iokp common bits
 $(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Tuna Overlay

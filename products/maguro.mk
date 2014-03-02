@@ -1,7 +1,7 @@
 # Inherit AOSP device configuration for maguro.
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 
-# Inherit IOKP common bits
+# Inherit iokp common bits
 $(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Inherit GSM common stuff

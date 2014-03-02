@@ -14,9 +14,11 @@ PRODUCT_PACKAGES += \
     ROMControl \
     Stk \
     su \
-    Torch \
-    Apollo \
-    LockClock \
+    Torch
+
+# IOKP packages
+PRODUCT_PACKAGES += \
+    OmniSwitch \
     DashClock \
     KitKatWhite
 
@@ -40,6 +42,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/iokp/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/iokp/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/iokp/prebuilt/bin/blacklist:system/addon.d/blacklist
 
 # Installer
 PRODUCT_COPY_FILES += \

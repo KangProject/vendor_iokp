@@ -1,7 +1,7 @@
 # Inherit AOSP device configuration for i9100g.
 $(call inherit-product, device/samsung/i9100g/full_i9100g.mk)
 
-# Inherit IOKP common bits
+# Inherit iokp common bits
 $(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Inherit GSM common stuff

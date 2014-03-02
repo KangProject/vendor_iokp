@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for tsubasa
-$(call inherit-product-if-exists, device/sony/tsubasa/iokp.mk)
+$(call inherit-product-if-exists, device/sony/tsubasa/aokp.mk)
 
 # tsubasa overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/tsubasa
@@ -8,7 +8,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/tsubasa
 PRODUCT_NAME := iokp_tsubasa
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := tsubasa
-PRODUCT_MODEL := LT25i
+PRODUCT_MODEL := Xperia V
 PRODUCT_MANUFACTURER := Sony
 
 # boot animation

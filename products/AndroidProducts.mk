@@ -4,15 +4,19 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/d2tmo.mk \
     $(LOCAL_DIR)/d2vzw.mk \
     $(LOCAL_DIR)/d2usc.mk \
+    $(LOCAL_DIR)/d800.mk \
+    $(LOCAL_DIR)/d801.mk \
+    $(LOCAL_DIR)/d802.mk \
     $(LOCAL_DIR)/dogo.mk \
     $(LOCAL_DIR)/e980.mk \
+    $(LOCAL_DIR)/endeavoru.mk \
     $(LOCAL_DIR)/evita.mk \
     $(LOCAL_DIR)/find5.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/hercules.mk \
+    $(LOCAL_DIR)/honami.mk \
     $(LOCAL_DIR)/huashan.mk \
     $(LOCAL_DIR)/hlte.mk \
-    $(LOCAL_DIR)/hltetmo.mk \
     $(LOCAL_DIR)/i605.mk \
     $(LOCAL_DIR)/i9100.mk \
     $(LOCAL_DIR)/i9100g.mk \
@@ -23,11 +27,11 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/jfltetmo.mk \
     $(LOCAL_DIR)/jflteusc.mk \
     $(LOCAL_DIR)/jfltevzw.mk \
+    $(LOCAL_DIR)/jfltexx.mk \
     $(LOCAL_DIR)/l900.mk \
-    $(LOCAL_DIR)/m7att.mk \
+    $(LOCAL_DIR)/ls980.mk \
+    $(LOCAL_DIR)/m7.mk \
     $(LOCAL_DIR)/m7spr.mk \
-    $(LOCAL_DIR)/m7tmo.mk \
-    $(LOCAL_DIR)/m7ul.mk \
     $(LOCAL_DIR)/m7vzw.mk \
     $(LOCAL_DIR)/maguro.mk \
     $(LOCAL_DIR)/mako.mk \
@@ -44,11 +48,13 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/targa.mk \
     $(LOCAL_DIR)/t0lte.mk \
     $(LOCAL_DIR)/tilapia.mk \
+    $(LOCAL_DIR)/togari.mk \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/toroplus.mk \
     $(LOCAL_DIR)/tsubasa.mk \
     $(LOCAL_DIR)/umtsspyder.mk \
     $(LOCAL_DIR)/vs920.mk \
+    $(LOCAL_DIR)/vs980.mk \
     $(LOCAL_DIR)/xt1053.mk \
     $(LOCAL_DIR)/xt1060.mk \
     $(LOCAL_DIR)/yuga.mk

@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for yuga
-$(call inherit-product-if-exists, device/sony/yuga/full_yuga.mk)
+$(call inherit-product-if-exists, device/sony/yuga/aokp.mk)
 
 # yuga overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/yuga
@@ -8,7 +8,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/yuga
 PRODUCT_NAME := iokp_yuga
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := yuga
-PRODUCT_MODEL := C6603
+PRODUCT_MODEL := Xperia Z
 PRODUCT_MANUFACTURER := Sony
 
 # boot animation

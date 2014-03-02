@@ -1,5 +1,5 @@
-# Inherit AOKP device configuration for ls980
-$(call inherit-product-if-exists, device/lge/ls980/iokp.mk)
+# Inherit iokp device configuration for ls980
+$(call inherit-product-if-exists, device/lge/ls980/aokp.mk)
 
 # ls980 overlay
 # PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/ls980

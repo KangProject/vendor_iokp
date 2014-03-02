@@ -2,16 +2,16 @@
 $(call inherit-product, device/motorola/xt1053/full_xt1053.mk)
 
 # Inherit common gsm config
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/iokp/configs/gsm.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Inherit common ghost overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/ghost
+DEVICE_PACKAGE_OVERLAYS += vendor/iokp/overlay/ghost
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_xt1053
+PRODUCT_NAME := iokp_xt1053
 PRODUCT_BRAND := T-Mobile
 PRODUCT_DEVICE := xt1053
 PRODUCT_MODEL := XT1053
@@ -22,4 +22,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ghost TARGET_DEVICE=XT1053 BUILD_FI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/iokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

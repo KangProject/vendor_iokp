@@ -11,7 +11,9 @@ $(call inherit-product, vendor/iokp/configs/vzw.mk)
 $(call inherit-product, vendor/iokp/configs/common.mk)
 
 # Inherit common jf overlays
-#DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/jf-common
+DEVICE_PACKAGE_OVERLAYS += vendor/iokp/overlay/samsung/jf-common \
+                           vendor/iokp/overlay/samsung/msm8960-common \
+                           vendor/iokp/overlay/samsung/qcom-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := iokp_jfltevzw

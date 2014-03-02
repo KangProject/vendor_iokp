@@ -1,5 +1,5 @@
-# Inherit AOKP device configuration for d802
-$(call inherit-product-if-exists, device/lge/d802/iokp.mk)
+# Inherit iokp device configuration for d802
+$(call inherit-product-if-exists, device/lge/d802/aokp.mk)
 
 # d802 overlay
 # PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/d802
